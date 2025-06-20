@@ -4,10 +4,14 @@ import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig({
+  base: '/goiteens-hw-js-vite/', //! 👈 ВАЖЛИВО: вкажіть базу
   root: 'src',
   build: {
     rollupOptions: {
-      input: glob.sync('./src/*.html'),
+      //! ❌ Це шукає тільки HTML-файли верхнього рівня src/, і не включає HTML-файли нижнього рівня
+      // input: glob.sync('./src/*.html'),
+      //! ✅ Це шукає ВСІ HTML-файли, включаючи HTML-файли нижнього рівня
+      input: glob.sync('./src/**/*.html'),
     },
     outDir: '../dist',
   },
