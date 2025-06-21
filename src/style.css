@@ -19,9 +19,9 @@ a {
   font-weight: 500;
   color: #646cff;
   text-decoration: inherit;
-  border: 1px solid gray;
-  border-radius: 8px;
-  box-shadow: 4px 4px 8px #a3a3a3;
+  border: 1px solid gray; /* ! */
+  border-radius: 8px; /* ! */
+  box-shadow: 4px 4px 8px #a3a3a3; /* ! */
 }
 a:hover {
   color: #535bf2;
@@ -77,9 +77,9 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
-  border: 1px solid gray;
-    border-radius: 8px;
-    box-shadow: 4px 4px 8px #a3a3a3;
+  border: 1px solid gray; /* ! */
+    border-radius: 8px; /* ! */
+    box-shadow: 4px 4px 8px #a3a3a3; /* ! */
   cursor: pointer;
   transition: border-color 0.25s;
 }
