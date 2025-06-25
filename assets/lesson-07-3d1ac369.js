@@ -26,12 +26,14 @@ Expecting `+x.join(", ")+", got '"+(this.terminals_[k]||k)+"'":T="Parse error on
     {{#if isAdmin}}
     <p>🔑 Адміністратор</p>
     {{/if}}
-</div>`,yt=`<div class="user-card">
+</div>
+`,yt=`<div class="user-card">
     <p><b>id:</b> {{id}}</p>
     <p><b>name:</b> {{name}}</p>
     <p><b>price:</b> {{price}}</p>
     <p><b>description:</b> {{description}}</p>
-</div>`;//! Урок-07 - приклад використання бібліотеки Handlebars в проєкті Vite
+</div>
+`;//! Урок-07 - приклад використання бібліотеки Handlebars в проєкті Vite
 console.log("Підключено скрипт lesson-07.js");console.log("%c LESSON-07 - Використання бібліотеки Handlebars ","color: white; background-color: #D33F49");//! Handlebars
 console.warn("var.2 Приклад використання Handlebars з конспекту:");const Mn={title:"2.Eat it createElement, templates rule!",items:["Handlebars-2","LoDash-2","Pug-2","EJS-2","lit-html-2"]},An=document.querySelector("#menu-template").innerHTML.trim(),On=Ve.compile(An),kt=On(Mn);console.log(`Вся розмітка (markup2): 
 `,kt);const In=document.querySelector("#menu-container");In.innerHTML=kt;//! ______________________________________________________________________________
