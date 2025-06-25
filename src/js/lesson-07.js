@@ -14,7 +14,7 @@ console.log(
 
 //! Handlebars
 // //! var.2 Приклад використання Handlebars з конспекту
-// console.warn("var.2 Приклад використання Handlebars з конспекту:");
+console.warn("var.2 Приклад використання Handlebars з конспекту:");
 // import Handlebars from 'handlebars'; //? підключено вище
 
 const menuData2 = {
@@ -53,32 +53,32 @@ menuСontainer.innerHTML = markup2;
 // console.warn("var.3 Використання Handlebars вручну (без Vite-плагіну):");
 // import Handlebars from 'handlebars'; //? підключено вище
 
-const menuData3 = {
-    title: '3.Eat it createElement, templates rule!',
-    items: ['Handlebars-3', 'LoDash-3', 'Pug-3', 'EJS-3', 'lit-html-3'],
-};
-const containerHandlebars03 = document.querySelector(".handlebars-var03");
-console.log("containerHandlebars03:", containerHandlebars03 );
+// const menuData3 = {
+//     title: '3.Eat it createElement, templates rule!',
+//     items: ['Handlebars-3', 'LoDash-3', 'Pug-3', 'EJS-3', 'lit-html-3'],
+// };
+// const containerHandlebars03 = document.querySelector(".handlebars-var03");
+// console.log("containerHandlebars03:", containerHandlebars03 );
 
-async function renderTemplate() {
-    const res = await fetch('../handlebars/template-3.hbs');
-    const templateText = await res.text();
+// async function renderTemplate() {
+//     const res = await fetch('../handlebars/template-3.hbs');
+//     const templateText = await res.text();
 
-    const template = Handlebars.compile(templateText);
-    const renderedHTML = template(menuData3);
-    // console.log("Вся розмітка (renderedHTML): \n", renderedHTML); //? Вся розмітка
+//     const template = Handlebars.compile(templateText);
+//     const renderedHTML = template(menuData3);
+//     // console.log("Вся розмітка (renderedHTML): \n", renderedHTML); //? Вся розмітка
 
-    containerHandlebars03.innerHTML = renderedHTML;
-};
+//     containerHandlebars03.innerHTML = renderedHTML;
+// };
 
-renderTemplate();
+// renderTemplate();
 //! ______________________________________________________________________________
 
 
 
 
 //!: var.4 Використання Handlebars (ChatGPT + Михайло Шпег)
-// console.warn("var.4 Використання Handlebars (ChatGPT + Михайло Шпег):");
+console.warn("var.4 Використання Handlebars (ChatGPT + Михайло Шпег):");
 // import Handlebars from 'handlebars'; //? підключено вище
 import userCardTemplate from "../handlebars/template-4.hbs?raw"; 
 
