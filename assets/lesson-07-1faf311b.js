@@ -28,10 +28,8 @@ Expecting `+x.join(", ")+", got '"+(this.terminals_[k]||k)+"'":T="Parse error on
     {{/if}}
 </div>`;//! Урок-07 - приклад використання бібліотеки Handlebars в проєкті Vite
 console.log("Підключено скрипт lesson-07.js");console.log("%c LESSON-07 - Використання бібліотеки Handlebars ","color: white; background-color: #D33F49");//! Handlebars
-console.warn("var.2 Приклад використання Handlebars з конспекту:");const xn={title:"2.Eat it createElement, templates rule!",items:["Handlebars-2","LoDash-2","Pug-2","EJS-2","lit-html-2"]},Mn=document.querySelector("#menu-template").innerHTML.trim(),On=Ve.compile(Mn),yt=On(xn);console.log(`Вся розмітка (markup2): 
+const xn={title:"2.Eat it createElement, templates rule!",items:["Handlebars-2","LoDash-2","Pug-2","EJS-2","lit-html-2"]},Mn=document.querySelector("#menu-template").innerHTML.trim(),On=Ve.compile(Mn),yt=On(xn);console.log(`Вся розмітка (markup2): 
 `,yt);const An=document.querySelector("#menu-container");An.innerHTML=yt;//! ______________________________________________________________________________
 //!: var.3 Використання Handlebars вручну (без Vite-плагіну)
-console.warn("var.3 Використання Handlebars вручну (без Vite-плагіну):");const In={title:"3.Eat it createElement, templates rule!",items:["Handlebars-3","LoDash-3","Pug-3","EJS-3","lit-html-3"]},kt=document.querySelector(".handlebars-var03");console.log("containerHandlebars03:",kt);async function Nn(){const t=await(await fetch("../handlebars/template.hbs")).text(),h=Ve.compile(t)(In);kt.innerHTML=h}Nn();//! ______________________________________________________________________________
-//!: var.4 Використання Handlebars (ChatGPT + Михайло Шпег)
-console.warn("var.4 Використання Handlebars (ChatGPT + Михайло Шпег):");const Rn=Ve.compile(wn),Dn={name:"Марія",age:24,isAdmin:!0},bt=document.querySelector(".handlebars-var04");console.log("containerHandlebars04:",bt);const Ct=Rn(Dn);console.log(`Вся розмітка (html): 
-`,Ct);bt.innerHTML=Ct;
+const In={title:"3.Eat it createElement, templates rule!",items:["Handlebars-3","LoDash-3","Pug-3","EJS-3","lit-html-3"]},kt=document.querySelector(".handlebars-var03");console.log("containerHandlebars03:",kt);async function Nn(){const t=await(await fetch("../handlebars/template-3.hbs")).text(),h=Ve.compile(t)(In);kt.innerHTML=h}Nn();const Rn=Ve.compile(wn),Dn={name:"Марія",age:24,isAdmin:!0},bt=document.querySelector(".handlebars-var04");console.log("containerHandlebars04:",bt);const Ct=Rn(Dn);console.log(`Вся розмітка (html): 
+`,Ct);bt.innerHTML=Ct;//! ______________________________________________________________________________
