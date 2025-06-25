@@ -119,8 +119,6 @@ const template5 = Handlebars.compile(productCard);
 //     description: 'A high-performance laptop for all your needs.',
 // }
 
-
-
 // const markup5 = template5(product);
 // console.log("Вся розмітка (markup5): \n", markup5); //? Вся розмітка
 // containerHandlebars05.innerHTML = markup5;
@@ -148,7 +146,6 @@ const products = [
         description: 'Noise-cancelling headphones for better focus.',
     },
 ];
-
 
 products.forEach(item => {
     console.log("item:", item);

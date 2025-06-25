@@ -69,7 +69,7 @@ body {
 /*todo: var.5 Використання Handlebars (HW-7) */
 .handlebars-var05 {
   display: grid;
-  /* display: none; */
+  display: none;
   gap: 20px;
 }
 
