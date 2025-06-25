@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson-07 (Handlebars) </title>
+
+  <!--! Стилі підключені в lesson-07.js -->
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/lesson-07.css" />
+</head>
+
+<body>
+  <!--! Урок-07 - приклад використання бібліотеки Handlebars в проєкті Vite -->
+  <div class="box">
+    <h1 class="box-title">Бібліотека Handlebars</h1>
+    <a class="box-main-page-link" href="../index.html">⬅️ Go to MAIN page</a>
+
+
+    <!--todo: var.1 Використання vite-plugin-handlebars лише у index.html -->
+    <h2>var.1: Використання vite-plugin-handlebars лише у index.html</h2>
+    <div class="handlebars-var01">
+      <h3>{{title}}</h3>
+      <ul>
+        {{#each items}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+
+
+    <!--todo: var.2 Приклад використання Handlebars з конспекту -->
+    <h2>var.2 Приклад використання Handlebars з конспекту</h2>
+    <div id="menu-container"></div>
+
+    <!--? Вміст всередині тега <template> не відображається в DOM -->
+    <template id="menu-template">
+      <div class="menu">
+        <h3 class="menu-title">{{title}}</h3>
+        <ul class="menu-list">
+          {{#each items}}
+          <li class="menu-item">{{this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+    </template>
+
+
+    <!--todo: var.3 Використання Handlebars вручну (без Vite-плагіну) -->
+    <h2>var.3 Використання Handlebars вручну (без Vite-плагіну)</h2>
+    <div class="handlebars-var03"></div>
+
+    <!--todo: vvar.4 Використання Handlebars (ChatGPT + Михайло Шпег) -->
+    <h2>var.4 Використання Handlebars (ChatGPT + Михайло Шпег)</h2>
+    <div class="handlebars-var04"></div>
+
+  </div>
+
+  <!--! Підключення скриптів -->
+  <!--? Робочий скрипт -->
+  <script type="module" src="../js/lesson-07.js"></script>
+</body>
+
+</html>

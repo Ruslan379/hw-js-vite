@@ -1,0 +1,63 @@
+/*! Урок-07 - приклад використання бібліотеки Handlebars в проєкті Vite */
+body {
+  background-color: #bdffe9;
+}
+
+.box {
+  margin: 0 auto;
+  width: 80%;
+  height: 100%;
+  /* background-color: #ffebe0; */
+  /* outline: 1px solid brown; */
+}
+
+.box-title {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.box-main-page-link {
+  display: inline-block;
+  padding: 4px 8px;
+  font-weight: 700;
+  border: 1px solid darkblue;
+  border-radius: 4px;
+}
+
+.box-main-page-link:hover {
+  color: darkred;
+  border-color: darkred;
+  background-color: #ff9d9d;
+}
+
+.box h2 {
+  text-align: center;
+  color: #603209;
+  text-decoration: underline;
+}
+
+/*? ------------------------------------------------------------------- */
+/*todo: var.1: Використання vite-plugin-handlebars лише у index.html */
+/*todo: todo: var.2 Приклад використання Handlebars з конспекту */
+/*todo: var.3 Використання Handlebars вручну (без Vite-плагіну) */
+/*todo: var.4 Використання Handlebars (ChatGPT + Михайло Шпег) */
+.handlebars-var01,
+#menu-container,
+.handlebars-var03,
+.handlebars-var04 {
+  margin: 0 auto 30px;
+  padding: 20px;
+  width: 40%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #963f00;
+  /* background-color: #ffebe0; */
+  outline: 1px solid brown;
+}
+
+.handlebars-var01 h3,
+#menu-container h3,
+.handlebars-var03 h3,
+.handlebars-var04 h3 {
+  font-size: 1.8em;
+  text-align: center;
+}
