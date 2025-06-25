@@ -97,3 +97,63 @@ const html = template(data);
 console.log("Вся розмітка (html): \n", html); //? Вся розмітка
 containerHandlebars04.innerHTML = html;
 //! ______________________________________________________________________________
+
+
+
+//!: var.5 Використання Handlebars (HW-7)
+console.warn("var.5 Використання Handlebars (HW-7):");
+// import Handlebars from 'handlebars'; //? підключено вище
+import productCard from "../handlebars/template-5.hbs?raw";
+console.log("productCard:", productCard);
+
+const containerHandlebars05 = document.querySelector(".handlebars-var05");
+console.log("containerHandlebars05:", containerHandlebars05);
+
+const template5 = Handlebars.compile(productCard);
+
+//todo: var.5-1. Для одного елемента масиву:
+// const product = {
+//     id: 1,
+//     name: 'Laptop',
+//     price: 1500,
+//     description: 'A high-performance laptop for all your needs.',
+// }
+
+
+
+// const markup5 = template5(product);
+// console.log("Вся розмітка (markup5): \n", markup5); //? Вся розмітка
+// containerHandlebars05.innerHTML = markup5;
+//todo:________________________________________________________________
+
+
+//todo: var.5-2. Для масиву об'єктів:
+const products = [
+    {
+        id: 1,
+        name: 'Laptop',
+        price: 1500,
+        description: 'A high-performance laptop for all your needs.',
+    },
+    {
+        id: 2,
+        name: 'Smartphone',
+        price: 700,
+        description: 'A modern smartphone with an excellent camera.',
+    },
+    {
+        id: 3,
+        name: 'Headphones',
+        price: 200,
+        description: 'Noise-cancelling headphones for better focus.',
+    },
+];
+
+
+products.forEach(item => {
+    console.log("item:", item);
+    const markup5 = template5(item);
+    console.log("Вся розмітка (markup5): \n", markup5); //? Вся розмітка
+    containerHandlebars05.innerHTML += markup5; //! Кожен раз ДОДАЄ нову картку
+});
+//! ______________________________________________________________________________

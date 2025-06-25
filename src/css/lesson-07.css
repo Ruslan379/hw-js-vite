@@ -39,13 +39,15 @@ body {
 
 /*? ------------------------------------------------------------------- */
 /*todo: var.1: Використання vite-plugin-handlebars лише у index.html */
-/*todo: todo: var.2 Приклад використання Handlebars з конспекту */
+/*todo: var.2 Приклад використання Handlebars з конспекту */
 /*todo: var.3 Використання Handlebars вручну (без Vite-плагіну) */
 /*todo: var.4 Використання Handlebars (ChatGPT + Михайло Шпег) */
+/*todo: var.5 Використання Handlebars (HW-7) */
 .handlebars-var01,
 #menu-container,
 .handlebars-var03,
-.handlebars-var04 {
+.handlebars-var04,
+.handlebars-var05 {
   margin: 0 auto 30px;
   padding: 20px;
   width: 40%;
@@ -58,7 +60,22 @@ body {
 .handlebars-var01 h3,
 #menu-container h3,
 .handlebars-var03 h3,
-.handlebars-var04 h3 {
+.handlebars-var04 h3,
+.handlebars-var05 h3 {
   font-size: 1.8em;
   text-align: center;
+}
+
+/*todo: var.5 Використання Handlebars (HW-7) */
+.handlebars-var05 {
+  display: grid;
+  /* display: none; */
+  gap: 20px;
+}
+
+.user-card {
+  padding: 20px;
+  border: 1px solid darkgoldenrod;
+  border-radius: 10px;
+  background-color: #fcffcb;
 }
