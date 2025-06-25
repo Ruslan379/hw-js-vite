@@ -15,5 +15,16 @@ export default defineConfig({
     },
     outDir: '../dist',
   },
-  plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
+  plugins: [
+    injectHTML(),
+    FullReload(['./src/**/**.html']),
+    //! Бібліотека Handlebars
+    //todo: var.1: Використання vite-plugin-handlebars лише у index.html
+    // handlebars({
+    //   context: {
+    //     title: 'Головна сторінка',
+    //     items: ['Про нас', 'Контакти', 'Послуги']
+    //   }
+    // })
+  ],
 });
