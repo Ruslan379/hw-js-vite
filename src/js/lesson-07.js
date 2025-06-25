@@ -14,7 +14,7 @@ console.log(
 
 //! Handlebars
 // //! var.2 Приклад використання Handlebars з конспекту
-console.warn("var.2 Приклад використання Handlebars з конспекту:");
+// console.warn("var.2 Приклад використання Handlebars з конспекту:");
 // import Handlebars from 'handlebars'; //? підключено вище
 
 const menuData2 = {
@@ -50,7 +50,7 @@ menuСontainer.innerHTML = markup2;
 
 
 //!: var.3 Використання Handlebars вручну (без Vite-плагіну)
-console.warn("var.3 Використання Handlebars вручну (без Vite-плагіну):");
+// console.warn("var.3 Використання Handlebars вручну (без Vite-плагіну):");
 // import Handlebars from 'handlebars'; //? підключено вище
 
 const menuData3 = {
@@ -61,7 +61,7 @@ const containerHandlebars03 = document.querySelector(".handlebars-var03");
 console.log("containerHandlebars03:", containerHandlebars03 );
 
 async function renderTemplate() {
-    const res = await fetch('../handlebars/template.hbs');
+    const res = await fetch('../handlebars/template-3.hbs');
     const templateText = await res.text();
 
     const template = Handlebars.compile(templateText);
@@ -78,7 +78,7 @@ renderTemplate();
 
 
 //!: var.4 Використання Handlebars (ChatGPT + Михайло Шпег)
-console.warn("var.4 Використання Handlebars (ChatGPT + Михайло Шпег):");
+// console.warn("var.4 Використання Handlebars (ChatGPT + Михайло Шпег):");
 // import Handlebars from 'handlebars'; //? підключено вище
 import userCardTemplate from "../handlebars/template-4.hbs?raw"; 
 
@@ -96,3 +96,4 @@ console.log("containerHandlebars04:", containerHandlebars04 );
 const html = template(data);
 console.log("Вся розмітка (html): \n", html); //? Вся розмітка
 containerHandlebars04.innerHTML = html;
+//! ______________________________________________________________________________
