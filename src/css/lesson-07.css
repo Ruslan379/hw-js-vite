@@ -67,6 +67,11 @@ body {
 }
 
 /*todo: var.5 Використання Handlebars (HW-7) */
+.title-handlebars-var05 {
+  display: block;
+  display: none;
+}
+
 .handlebars-var05 {
   display: grid;
   display: none;
