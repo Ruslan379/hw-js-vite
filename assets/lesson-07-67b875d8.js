@@ -46,5 +46,5 @@ console.warn("var.4 Використання Handlebars (ChatGPT + Михайл�
 console.warn("var.5 Використання Handlebars (HW-7):");console.log("productCard:",yt);const Pt=document.querySelector(".handlebars-var05");console.log("containerHandlebars05:",Pt);const Un=Ve.compile(yt),Wn=[{id:1,name:"Laptop",price:1500,description:"A high-performance laptop for all your needs."},{id:2,name:"Smartphone",price:700,description:"A modern smartphone with an excellent camera."},{id:3,name:"Headphones",price:200,description:"Noise-cancelling headphones for better focus."}];Wn.forEach(e=>{console.log("item:",e);const t=Un(e);console.log(`Вся розмітка (markup5): 
 `,t),Pt.innerHTML+=t;//! Кожен раз ДОДАЄ нову картку
 });//! ______________________________________________________________________________
-//!: Імпорт JSON-файла в проєкті з бандлером Vite (lesson-08)
-console.warn("Імпорт JSON-файла в проєкті з бандлером Vite (lesson-08):");console.log("userJSON:",Bn);//! ❗️userJSON - це вже об'єкт❗️
+console.log("---------------------------------------------------------------------------------------");//!: Імпорт JSON-файла user.json в проєкті з бандлером Vite (lesson-08)
+console.warn("Імпорт JSON-файла user.json в проєкті з бандлером Vite (lesson-08):");console.log("userJSON:",Bn);//!   ❗️ userJSON - це вже об'єкт ❗️
