@@ -154,9 +154,11 @@ products.forEach(item => {
     containerHandlebars05.innerHTML += markup5; //! Кожен раз ДОДАЄ нову картку
 });
 //! ______________________________________________________________________________
+console.log("---------------------------------------------------------------------------------------");
 
-//!: Імпорт JSON-файла в проєкті з бандлером Vite (lesson-08)
-console.warn("Імпорт JSON-файла в проєкті з бандлером Vite (lesson-08):");
-//? ✳️ файл user.json:
+
+//!: Імпорт JSON-файла user.json в проєкті з бандлером Vite (lesson-08)
+console.warn("Імпорт JSON-файла user.json в проєкті з бандлером Vite (lesson-08):");
+
 import userJSON from "../json/user.json"
-console.log("userJSON:", userJSON); //! ❗️userJSON - це вже об'єкт❗️
+console.log("userJSON:", userJSON); //!   ❗️ userJSON - це вже об'єкт ❗️
